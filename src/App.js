@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'; // Importing useState and useEffect hooks
+import Loading from './components/Loading';
+import Navbar from './components/Navbar';
+import StartMenu from './components/StartMenu';
+import Skills from './components/Skills';
+import About from './components/About';
+import Projects from './components/Projects';
+import Links from './components/Links';
+import Footer from './components/Footer';
+import './App.css'; // Import your main CSS file
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [isLoading, setIsLoading] = useState(true); // State to manage loading
+
+    useEffect(() => {
+        // Set a timeout to switch from loading to main app after 10 seconds
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 6000); // 10000 milliseconds = 10 seconds
+
+        // Cleanup the timer if the component unmounts before the timeout
+        return () => clearTimeout(timer);
+    }, []);
+
+    return (
+        <div className="App">
+            {isLoading ? (
+                <Loading />
+            ) : (
+                <>
+                    <Navbar />
+                    <StartMenu />
+                    {/* <Paint /> Uncomment if needed */}
+                    <Skills />
+                    <About />
+                    <Projects />
+                    <Links />
+                    <Footer />
+                </>
+            )}
+        </div>
+    );
+};
 
 export default App;

@@ -1,0 +1,86 @@
+.skills-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 91.8%;
+    width: 250px;
+    background-color: #e8e7ed;
+	border: solid 2px #c8c8c8;
+	border-radius: 4px;
+}
+
+.skills-toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: linear-gradient(to top right, #b0e1ea, #ffefab);
+    justify-content:space-between;
+}
+
+.sign-on {
+    color: black;
+    padding-right: 50px;
+}
+
+.minmax {
+    float: right;
+}
+
+.aim-logo {
+	float: right;
+	margin-top: 10px;
+	margin-right: 22px;
+	width: 200px;
+	height: 170px;
+	border-radius: 4px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aim-logo:hover {
+	box-shadow: 0 8px 12px #799bf3;
+}
+
+.skills {
+    color: black;
+    display: inline-block;
+    margin: 20px 0 0 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: solid 2 px #c8c8c8;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.buddies-card {
+    width: 206px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin-left: 25px;
+    align-items: center;
+    border: solid 2px #c8c8c8;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+	font-size: .8rem;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    display: inline;
+    text-align: left;
+}
+
+.skills-list, li {
+    margin-bottom: 5px;
+}
+
+li, .icon {
+  vertical-align: middle;
+  margin-left: 3px;
+}

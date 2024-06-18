@@ -1,0 +1,12 @@
+#contact {
+    padding-bottom: 10px;
+}
+
+.copyright p {
+    padding-top: 5px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Other styles for Footer component */

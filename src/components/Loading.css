@@ -1,0 +1,52 @@
+/* Loading.css */
+.loading {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.loading h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 20px; /* Add some space between the image and text */
+}
+
+.windowsLoading {
+    height: 60vh; /* Adjust the height of the image */
+}
+
+.loader {
+    width: 150px;
+    height: 12px;
+    border: 2px solid #777;
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px; /* Add space between the text and the loader */
+}
+
+.item {
+    width: 45px;
+    background-image: linear-gradient(90deg, transparent 30%, #ec66e1 30%);
+    background-size: 15px 15px;
+    animation: loading 2s infinite linear;
+}
+
+@keyframes loading {
+    from {
+        transform: translate(-40px);
+    }
+    to {
+        transform: translate(160px);
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 60s !important;
+    }
+}
