@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Links from './components/Links';
 import Footer from './components/Footer';
+import Internet from './components/Internet';
 import './App.css'; // Import your main CSS file
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
                     <Skills />
                     <About />
                     <Projects />
+                    <Internet />
                     <Links />
                     <Footer />
                 </>
